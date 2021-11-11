@@ -1,0 +1,7 @@
+<tr id="book-<%=book.id%>">
+    <td><%= book.title %></td>
+    <td><%= book.author %></td>
+    <td><%= book.status %></td>
+    <td><%= book.isbn %></td>
+    <td><%= link_to 'Borrar', anti_buy_path(book.id), method: :patch, remote: true %></td>
+</tr>
